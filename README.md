@@ -46,3 +46,7 @@ The testbench is a reg signal driver that produces input values and op-codes and
 
 ## Conclusion:
 The ALU implemented all the necessary functions, addition, subtraction, AND, OR and NOT depending on the op-code, and the simulation completely confirmed its proper work. Besides the obligatory functions, XOR and XNOR were applied and tested as additional functionality and both functions worked properly in the final waveform and end terminal results.
+
+# OUTPUT 
+
+<img width="1920" height="1129" alt="Image" src="https://github.com/user-attachments/assets/086b8192-279c-4f50-9979-bca8d3279f6c" />
