@@ -24,7 +24,7 @@ This assembles the testbench and the ALU module into one simulation. The followi
          
 The results of each operation were shown in the terminal output, which verified that the ALU gave a correct result with addition, subtraction, AND, OR, NOT, XOR and XNOR. Every test case yielded the expected outcomes and this confirmed that the ALU was operating well.
 
-### GTKWAVE Waveform Simulator:
+### GTKWAVE - Waveform Simulator:
 GTKWave was then applied to open the generated VCD file to visualize the transitions between the signal:
 
           code: gtkwave
@@ -42,7 +42,11 @@ The ALU is coded in a behavioral
  
  statement. This allows the module to directly use Verilog operators to do addition, subtraction, AND, OR and NOT without having to model gates.
 
-The testbench is a reg signal driver that produces input values and op-codes and drives them into the ALU and their result is registered by means of *$display* and waveform dumps. It checks every step of operation serially so that the ALU can give the same output in all modes.
+The testbench is a reg signal driver that produces input values and op-codes and drives them into the ALU and their result is registered by means of 
+
+    code: $display("Operation %b", alu_out);
+    
+and waveform dumps. It checks every step of operation serially so that the ALU can give the same output in all modes.
 
 ## Conclusion:
 The ALU implemented all the necessary functions, addition, subtraction, AND, OR and NOT depending on the op-code, and the simulation completely confirmed its proper work. Besides the obligatory functions, XOR and XNOR were applied and tested as additional functionality and both functions worked properly in the final waveform and end terminal results.
