@@ -53,4 +53,10 @@ The ALU implemented all the necessary functions, addition, subtraction, AND, OR 
 
 # OUTPUT 
 
+GTKWAVE:
+
 <img width="1920" height="1129" alt="Image" src="https://github.com/user-attachments/assets/086b8192-279c-4f50-9979-bca8d3279f6c" />
+
+ VS TERMINAL
+
+ 
