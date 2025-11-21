@@ -9,7 +9,7 @@ reg [3:0] A, B;    // inputs
 reg [2:0] op;      // operations 
 wire [3:0] alu_out;  //output
 
-//instantiate the AND GATE module
+//instantiate the ALU module
 basic_alu dut(.A(A), .B(B), .op(op), .alu_out(alu_out));
 
 //clock generation
@@ -53,5 +53,6 @@ $dumpvars(0, basic_alu_tb);
 $finish; // end simulation
 
 end
+
 
 endmodule
